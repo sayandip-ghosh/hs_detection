@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEO STREAMING</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/new.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+
+<body class="new_body">
+
+    <div class="div_stream">
+        <img class="img_stream" src="{{ url_for ('video') }}" alt="">
+
+    </div>
+    <div class="section-text">
+        <p>AI WILL BE</p>
+        <span class="txt1">TAKING</span>
+        <span id="element"></span>
+        
+    </div>
+    <button class="btn_stop_stream" onclick="window.location.href='/stop'">STOP</button>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['ATTENDANCE'],
+            typeSpeed: 500,
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello world...
+
+    <div>
+        <img src="{{ url_for ('video') }}" width="50%"/>
+    </div>
+
+</body>
+</html> -->

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/atd.css')}}">
+    <title>Attendance System</title>
+</head>
+<body>
+    <h1><span>FACIAL</span> <span2>ATTENDANCE</span2><span> SYSTEM</span> </h1>
+    <div class="wrapper">
+        <div class="container">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="card-content">
+                    <div class="table-container">
+           
+                        <button onclick="window.location.href='/start'" >TAKE  ATTENDANCE</button>
+                        <img src="abstract-blue-circle-black-background-technology_1142-12714.avif" alt="">
+                        <table id="attendanceTable">
+                            <h3 >TODAY'S  ATTENDANCE</h3>
+                            <table>
+                                <tr>
+                                  <th>Username</th>
+                                  <th>ID</th>
+                                  <th>Time</th>
+                                </tr>
+                                <tr>
+                                  <td>Muskaan Das</td>
+                                  <td>1234</td>
+                                  <td>10:00 AM</td>
+                                </tr>
+                                <tr>
+                                  <td>Anwesha Sen</td>
+                                  <td>5678</td>
+                                  <td>11:30 AM</td>
+                                </tr>
+                                <tr>
+                                    <td>{{name}}</td>
+                                    <td>{{roll}}</td>
+                                    <td>{{time}}</td>
+                                  </tr>
+                            <tbody id="attendanceBody">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c2" >
+            <label for="c2" class="card">
+                <div class="card-content">
+                  
+                    <div class="form-container">
+                        <h2>ADD NEW USER</h2>
+                        <input type="text" id="usernameInput" class="form-input" placeholder="Enter New Username">
+                        <input type="text" id="usernameInput" class="form-input" placeholder="Enter New Id">
+                        
+                        <button onclick="addUser()">ADD NEW USER</button>
+                    </div>
+                    
+                </div>
+            </label>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,325 @@
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+  
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+.card {
+
+    width: 250px;
+    height: 550px;
+    border-radius: 100rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+   
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/278/150/small_2x/dark-background-abstract-with-light-effect-vector.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+}
+span{
+    color: #0e9c90;
+    }
+span2{
+    color: wheat;
+    }
+    h1{
+        text-align: center;
+        margin-top: 100px;
+        font-size: 5rem;
+    }
+    input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/278/150/small_2x/dark-background-abstract-with-light-effect-vector.jpg);
+
+}
+.card[for="c2"] {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/278/150/small_2x/dark-background-abstract-with-light-effect-vector.jpg);
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.table-container {
+    width: 50%;
+}
+.table-container img
+{
+    width: 60%;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 100px;
+    text-align: center;
+    justify-content: center;
+    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+   
+    max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid wheat;
+            border-radius: 10px;
+}
+th, td {
+    border: 5px solid wheat;
+    padding: 8px;
+    text-align: center;
+    color: wheat;
+}
+
+
+.form-container input {
+    margin-bottom: 6px;
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:wheat;
+    padding: 15px;
+margin: 15px ;
+font-size: 18px;
+border-radius: 6px;
+
+}
+button {
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    display: flex;
+    padding: 8px 12px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 70px;
+        width: fit-content;
+        border-radius: 10px;
+        display: inline-block;
+        margin-top: 15px;
+        white-space: nowrap;
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        background-color: black;
+        color: wheat;
+       
+}
+button:hover {
+    background-color: #0e9c90;
+}
+h2{
+    color: wheat;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 60px;
+}
+span{
+color: #0e9c90;
+}
+span2{
+color: wheat;
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 5rem;
+}
+
+h3{
+    color: wheat;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+    h1{
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        font-size: 2rem;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .card {
+        width: calc(100% - 20px);
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    .form-container input {
+        width: calc(100% - 30px);
+        margin: 10px 0;
+    }
+
+    button {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.card {
+    width: 200px;
+    height: 550px;
+    margin-right: 80px;
+    border-radius: 10px;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.table-container {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.table-container img {
+    width: 60%;
+    border-radius: 15px;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    text-align: center;
+}
+
+th, td {
+    border: 5px solid wheat;
+    padding: 8px;
+    text-align: center;
+    color: wheat;
+}
+
+.form-container input {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: wheat;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    border-radius: 6px;
+}
